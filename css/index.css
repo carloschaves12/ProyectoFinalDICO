@@ -1,0 +1,121 @@
+body {
+  background: linear-gradient(to bottom left, #303031, #080808);
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header-content {
+  max-width: 960px;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-button {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background-color: #f8b74f;
+  color: #303031;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  color: rgb(225, 84, 71);
+  cursor: pointer;
+}
+
+.header-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 15px;
+  color: white;
+}
+
+#intro p {
+  text-align: justify;
+  margin: 0px 15px 20px 15px;
+}
+
+#botonReserva {
+  background-color: rgb(225, 84, 71);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+}
+
+#botonCarta {
+  background-color: #f8b74f;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+}
+
+#imagenes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#imagenes img {
+  max-width: 80%;
+}
+
+#cafes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+#cafes h2 {
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+}
+
+#cafes h3 {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: rgb(225, 84, 71);
+}
+
+#cafes img {
+  max-width: 80%;
+}
