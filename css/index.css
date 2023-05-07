@@ -99,23 +99,115 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
+  position: relative;
+  margin-bottom: 15%;
 }
 
 #cafes h2 {
+  width: 80%;
+  font-size: 48px;
+  color: #C69C6D;
+  -webkit-text-stroke: 3px #5C3E1B;
+  margin-bottom: 5%;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 80%;
+  max-width: 80%;
+}
+
+#boton-imagen {
+  position: absolute;
+  bottom: 15%;
+  transform: translateX(-50%, 50%);
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #303031;
+  border: 2px solid #303031;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.img-container:hover #boton-imagen  {
+  opacity: 1;
+}
+
+#llevar {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+}
+
+#platoFondoLlevar {
+  position: relative;
   width: 80%;
+  height: auto;
 }
 
-#cafes h3 {
-  position: absolute; 
-  top: 0;
-  left: 0;
+#llevar .content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  width: 50%;
+  text-align: center;
+  color: #ffff;
+  z-index: 2;
+}
+
+#llevar button {
+  font-size: 28px;
+  background-color: #C69C6D;
+  color: #ffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#platoFrenteLlevar {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  height: auto;
   z-index: 1;
-  color: rgb(225, 84, 71);
 }
 
-#cafes img {
-  max-width: 80%;
+footer  {
+  display: flex;
+}
+
+footer img {
+  width: 50%;
+}
+
+#contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+  color: white;
+}
+
+#contacto a {
+  color: white;
+  text-decoration: none;
+}
+
+#redes {
+  display: flex;
+  column-gap: 15px;
 }
