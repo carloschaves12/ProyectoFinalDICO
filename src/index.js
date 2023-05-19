@@ -9,4 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
   imagen.addEventListener("mouseout", () => {
     botonImagen.style.opacity = 0;
   });
+
+  // Configuración de ScrollReveal.js
+  ScrollReveal().reveal(".sr", {
+    delay: 200,
+    distance: "50px",
+    duration: 1000,
+    easing: "ease-in-out",
+    //mobile: false,
+  });
 });
