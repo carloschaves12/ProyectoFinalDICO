@@ -25,13 +25,17 @@ header {
   top: 5%;
   left: 5%;
   background-color: #f8b74f;
-  color: #303031;
-  font-weight: bold;
-  font-size: 16px;
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
+}
+
+.header-button a {
+  color: #303031;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .menu-icon {
@@ -47,6 +51,34 @@ header {
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+.menu {
+  display: none;
+  /* Resto de estilos del menú */
+}
+
+.menu.active {
+  display: block;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  list-style: none;
+  margin-top: 40px;
+}
+
+#menu li {
+  margin-bottom: 10px;
+}
+
+#menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#menu li a:hover {
+  color: #c69c6d;
 }
 
 #intro {
@@ -106,8 +138,8 @@ header {
 #cafes h2 {
   width: 80%;
   font-size: 48px;
-  color: #C69C6D;
-  -webkit-text-stroke: 3px #5C3E1B;
+  color: #c69c6d;
+  -webkit-text-stroke: 3px #5c3e1b;
   margin-bottom: 5%;
 }
 
@@ -137,7 +169,7 @@ header {
   transition: opacity 0.3s ease-in-out;
 }
 
-.img-container:hover #boton-imagen  {
+.img-container:hover #boton-imagen {
   opacity: 1;
 }
 
@@ -170,7 +202,7 @@ header {
 
 #llevar button {
   font-size: 28px;
-  background-color: #C69C6D;
+  background-color: #c69c6d;
   color: #ffff;
   border: none;
   border-radius: 20px;
@@ -186,20 +218,12 @@ header {
   z-index: 1;
 }
 
-footer  {
-  display: flex;
-}
-
-footer img {
-  width: 50%;
-}
-
 #contacto {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 15px;
   color: white;
+  flex-direction: column;
+  row-gap: 10px;
+  padding-left: 5%;
 }
 
 #contacto a {
@@ -207,7 +231,19 @@ footer img {
   text-decoration: none;
 }
 
+#contacto a:hover {
+  color: #c69c6d;
+}
+
 #redes {
   display: flex;
-  column-gap: 15px;
+  column-gap: 10px;
+}
+#redes a {
+  text-decoration: none;
+}
+
+footer {
+  color: white;
+  text-align: center;
 }

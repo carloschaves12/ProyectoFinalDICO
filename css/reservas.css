@@ -1,0 +1,92 @@
+body {
+  background: linear-gradient(to bottom left, #303031, #080808);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 26px;
+}
+
+header a:hover {
+  color: #c69c6d;
+}
+
+form {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #c69c6d;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#reservation-success {
+    color: white;
+    text-align: center;
+}
+
+#contacto {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  row-gap: 10px;
+  padding-left: 5%;
+}
+
+#contacto a {
+  color: white;
+  text-decoration: none;
+}
+
+#contacto a:hover {
+  color: #c69c6d;
+}
+
+#redes {
+  display: flex;
+  column-gap: 10px;
+}
+#redes a {
+  text-decoration: none;
+}
+
+footer {
+  color: white;
+  text-align: center;
+}

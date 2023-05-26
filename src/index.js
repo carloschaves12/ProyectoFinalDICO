@@ -16,6 +16,15 @@ document.addEventListener("DOMContentLoaded", function () {
     distance: "50px",
     duration: 1000,
     easing: "ease-in-out",
-    //mobile: false,
+  });
+
+  // Obtén los elementos del DOM
+  const menuIcon = document.getElementById("menu-icon");
+  const menu = document.getElementById("menu");
+
+  // Añade un evento de clic al icono del menú
+  menuIcon.addEventListener("click", function () {
+    // Alterna la clase 'active' del menú para mostrar u ocultar el menú desplegable
+    menu.classList.toggle("active");
   });
 });

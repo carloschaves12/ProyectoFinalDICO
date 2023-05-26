@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurante XYZ</title>
-    <script src="src/index.js"></script>
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
+    <script src="../src/index.js"></script>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -20,9 +20,18 @@
   <body>
     <header class="sr">
       <div class="header-content">
-        <button class="header-button">Reservas</button>
-        <span class="menu-icon material-symbols-outlined"> menu </span>
-        <img src="img/logo.png" alt="Imagen de cabecera" />
+        <button class="header-button">
+          <a href="reservas.html">Reservas</a>
+        </button>
+        <span id="menu-icon" class="menu-icon material-symbols-outlined"
+          >menu</span
+        >
+        <ul id="menu" class="menu">
+          <li><a href="#">Carta</a></li>
+          <li><a href="#">Opción 2</a></li>
+          <li><a href="#">Opción 3</a></li>
+        </ul>
+        <img src="../img/logo.png" alt="Imagen de cabecera" />
       </div>
     </header>
     <main>
@@ -36,11 +45,11 @@
         <button id="botonReserva">Reserva aquí</button>
         <button id="botonCarta">Carta</button>
         <div id="imagenes">
-          <img id="slider1" src="img/plato1.webp" alt="foto del plato1" />
+          <img id="slider1" src="../img/plato1.webp" alt="foto del plato1" />
           <img
             id="slider2"
             hidden="true"
-            src="img/interior1.jpeg"
+            src="../img/interior1.jpeg"
             alt="foto del interior1"
           />
         </div>
@@ -48,14 +57,14 @@
       <section id="cafes" class="sr">
         <h2>Cafés especiales</h2>
         <div class="image-container">
-          <img src="img/cafe1.jpg" alt="cafe 1" />
+          <img src="../img/cafe1.jpg" alt="cafe 1" />
           <button id="boton-imagen">Ver más</button>
         </div>
       </section>
       <section id="llevar" class="sr">
         <img
           id="platoFondoLlevar"
-          src="img/cafe1.jpg"
+          src="../img/cafe1.jpg"
           alt="foto plato fondo para llevar"
         />
         <div class="content">
@@ -63,15 +72,13 @@
         </div>
         <img
           id="platoFrenteLlevar"
-          src="img/plato1.webp"
+          src="../img/plato1.webp"
           alt="foto plato frente para llevar"
         />
       </section>
-    </main>
-    <footer class="sr">
-      <img src="img/logo.png" alt="logo footer" />
-      <div id="contacto">
-        Telefono: <a href="tel:123456789">123456789</a>
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <a href="tel:123456789">123456789</a>
         <a href="mailto:lola@gmail.com">lola@gmail.com</a>
         calle de la piruleta 1
         <div id="redes">
@@ -88,7 +95,11 @@
             <i class="fa-brands fa-youtube"></i>
           </a>
         </div>
-      </div>
+      </section>
+    </main>
+    <footer class="sr">
+      <p>© 2023 RESTAURANTE XYZ</p>
+      <p>ALL RIGHTS RESERVED</p>
     </footer>
   </body>
 </html>
