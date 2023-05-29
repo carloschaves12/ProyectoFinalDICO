@@ -106,6 +106,19 @@ header {
   width: 60%;
 }
 
+#botonReserva a {
+  color: #303031;
+  text-decoration: none;
+}
+
+#imagenes img {
+  display: none;
+}
+
+#imagenes img.active {
+  display: block;
+}
+
 #botonCarta {
   background-color: #f8b74f;
   font-weight: bold;

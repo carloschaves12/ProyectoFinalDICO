@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurante XYZ</title>
     <script src="../src/index.js"></script>
+    <script src="../src/scrollReveal.js"></script>
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link
@@ -42,15 +43,15 @@
           expedita quo placeat distinctio consequuntur, culpa qui doloribus illo
           ipsam harum illum atque!
         </p>
-        <button id="botonReserva">Reserva aquí</button>
+        <button id="botonReserva"> <a href="reservas.html">Reserva aquí</a></button>
         <button id="botonCarta">Carta</button>
         <div id="imagenes">
-          <img id="slider1" src="../img/plato1.webp" alt="foto del plato1" />
+          <img id="slider1" class="active" src="../img/plato1.webp" alt="foto del plato1"/>
           <img
             id="slider2"
-            hidden="true"
             src="../img/interior1.jpeg"
             alt="foto del interior1"
+            class="inactive"
           />
         </div>
       </section>
@@ -61,7 +62,7 @@
           <button id="boton-imagen">Ver más</button>
         </div>
       </section>
-      <section id="llevar" class="sr">
+      <section id="llevar" class="sr2">
         <img
           id="platoFondoLlevar"
           src="../img/cafe1.jpg"
@@ -97,7 +98,7 @@
         </div>
       </section>
     </main>
-    <footer class="sr">
+    <footer class="sr2">
       <p>© 2023 RESTAURANTE XYZ</p>
       <p>ALL RIGHTS RESERVED</p>
     </footer>

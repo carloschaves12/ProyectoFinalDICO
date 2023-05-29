@@ -1,4 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Slider
+  const imgslider1 = document.getElementById("slider1");
+  const imgslider2 = document.getElementById("slider2");
+
+  setInterval(changeImages, 5000);
+
+  function changeImages() {
+    console.log("changeImages");
+    if (imgslider1.classList.contains("active")) {
+      console.log("slider1 active");
+      imgslider1.classList.remove("active");
+      imgslider2.classList.add("active");
+    } else {
+      console.log("slider2 active");
+      imgslider2.classList.remove("active");
+      imgslider1.classList.add("active");
+    }
+  }
+
+  // Al pasar el boton sobre la imagen, se muestra el boton de "ver mas"
   const botonImagen = document.getElementById("boton-imagen");
   const imagen = botonImagen.previousElementSibling;
 
@@ -10,21 +30,11 @@ document.addEventListener("DOMContentLoaded", function () {
     botonImagen.style.opacity = 0;
   });
 
-  // Configuración de ScrollReveal.js
-  ScrollReveal().reveal(".sr", {
-    delay: 200,
-    distance: "50px",
-    duration: 1000,
-    easing: "ease-in-out",
-  });
-
-  // Obtén los elementos del DOM
+  // Funcionalidad al icono del menú
   const menuIcon = document.getElementById("menu-icon");
   const menu = document.getElementById("menu");
 
-  // Añade un evento de clic al icono del menú
   menuIcon.addEventListener("click", function () {
-    // Alterna la clase 'active' del menú para mostrar u ocultar el menú desplegable
     menu.classList.toggle("active");
   });
 });
