@@ -111,14 +111,6 @@ header {
   text-decoration: none;
 }
 
-#imagenes img {
-  display: none;
-}
-
-#imagenes img.active {
-  display: block;
-}
-
 #botonCarta {
   background-color: #f8b74f;
   font-weight: bold;
@@ -134,10 +126,22 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 300px; /* Ajusta la altura según tus necesidades */
+  overflow: hidden;
 }
 
 #imagenes img {
-  max-width: 80%;
+  width: 90%;
+  height: 80%;
+  display: none;
+  transform: translateX(100%); /* Inicialmente desplazada fuera del contenedor */
+  transition: transform 0.4s ease;
+}
+
+#imagenes img.active {
+  display: block;
+  transform: translateX(0%);
 }
 
 #cafes {
@@ -189,7 +193,7 @@ header {
 #llevar {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 250px;
   margin: 20px 0;
   display: flex;
   justify-content: flex-start;
@@ -198,8 +202,19 @@ header {
 
 #platoFondoLlevar {
   position: relative;
-  width: 80%;
+  width: 90%;
+  top: -10%;
+  left: -25%;
   height: auto;
+}
+
+#platoFrenteLlevar {
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
 }
 
 #llevar .content {
@@ -221,14 +236,6 @@ header {
   border-radius: 20px;
   padding: 10px 15px;
   cursor: pointer;
-}
-
-#platoFrenteLlevar {
-  position: absolute;
-  left: 10%;
-  width: 80%;
-  height: auto;
-  z-index: 1;
 }
 
 #contacto {
