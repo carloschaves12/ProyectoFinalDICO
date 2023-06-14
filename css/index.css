@@ -190,10 +190,6 @@ header {
   transition: opacity 0.3s ease-in-out;
 }
 
-.img-container:hover + #boton-imagen {
-  display: block;
-}
-
 #llevar {
   position: relative;
   width: 100%;
