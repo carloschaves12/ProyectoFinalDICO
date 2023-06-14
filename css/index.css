@@ -122,6 +122,11 @@ header {
   width: 60%;
 }
 
+#botonCarta a {
+  color: #303031;
+  text-decoration: none;
+}
+
 #imagenes {
   display: flex;
   flex-direction: column;
@@ -182,12 +187,11 @@ header {
   border-radius: 20px;
   font-size: 1.2rem;
   cursor: pointer;
-  opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
 
-.img-container:hover #boton-imagen {
-  opacity: 1;
+.img-container:hover + #boton-imagen {
+  display: block;
 }
 
 #llevar {
@@ -266,6 +270,12 @@ header {
 footer {
   color: white;
   text-align: center;
+}
+
+@media (max-width: 1023px) {
+  #boton-imagen {
+    display: block; 
+  }
 }
 
 @media (min-width: 425px) {

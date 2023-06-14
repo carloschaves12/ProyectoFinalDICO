@@ -30,18 +30,31 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  var timeSelect = document.getElementById("time");
-
   // Generar opciones de hora cada 30 minutos
-  for (var i = 0; i < 24; i++) {
-    for (var j = 0; j < 60; j += 30) {
-      var hour = i.toString().padStart(2, "0");
-      var minute = j.toString().padStart(2, "0");
-      var optionText = hour + ":" + minute;
-      var optionValue = hour + ":" + minute + ":00";
-      var option = document.createElement("option");
-      option.text = optionText;
-      option.value = optionValue;
+  const timeSelect = document.getElementById("time");
+
+  // Generar opciones de horario de 12:00 a 16:00
+  for (let hour = 12; hour <= 15; hour++) {
+    for (let minute = 0; minute <= 30; minute += 30) {
+      const formattedTime = `${hour.toString().padStart(2, "0")}:${minute
+        .toString()
+        .padStart(2, "0")}`;
+      const option = document.createElement("option");
+      option.value = formattedTime;
+      option.textContent = formattedTime;
+      timeSelect.appendChild(option);
+    }
+  }
+
+  // Generar opciones de horario de 20:30 a 00:30
+  for (let hour = 20; hour <= 23; hour++) {
+    for (let minute = 30; minute <= 30; minute += 30) {
+      const formattedTime = `${hour.toString().padStart(2, "0")}:${minute
+        .toString()
+        .padStart(2, "0")}`;
+      const option = document.createElement("option");
+      option.value = formattedTime;
+      option.textContent = formattedTime;
       timeSelect.appendChild(option);
     }
   }

@@ -1,0 +1,58 @@
+body {
+    background: linear-gradient(to bottom left, #303031, #080808);
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+  }
+  
+  header a:hover {
+    color: #c69c6d;
+  }
+  
+  #carta {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+  }
+  
+  #contacto {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-left: 5%;
+  }
+  
+  #contacto a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #contacto a:hover {
+    color: #c69c6d;
+  }
+  
+  #redes {
+    display: flex;
+    column-gap: 10px;
+  }
+  #redes a {
+    text-decoration: none;
+  }
+  
+  footer {
+    color: white;
+    text-align: center;
+  }
+  
