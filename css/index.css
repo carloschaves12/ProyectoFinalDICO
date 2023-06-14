@@ -161,7 +161,6 @@ header {
   width: 80%;
   font-size: 48px;
   color: #c69c6d;
-  -webkit-text-stroke: 3px #5c3e1b;
   margin-bottom: 5%;
 }
 
@@ -181,9 +180,9 @@ header {
   bottom: 15%;
   transform: translateX(-50%, 50%);
   padding: 10px 20px;
-  background-color: #ffffff;
+  background-color: #c69c6d;
   color: #303031;
-  border: 2px solid #303031;
+  border: 2px solid #c69c6d;
   border-radius: 20px;
   font-size: 1.2rem;
   cursor: pointer;
